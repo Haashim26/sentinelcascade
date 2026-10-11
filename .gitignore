@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SentinelCascade additions
+secrets.h
+node_modules/
+.env.*
+!.env.example
+dist/
