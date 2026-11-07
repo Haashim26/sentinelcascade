@@ -78,7 +78,10 @@ def process_message(raw_payload):
 
         # Forward only valid messages successfully stored
         if valid and saved:
-            forward_message(payload)
+            if ENGINE_URL:
+                forward_message(payload)
+            else:
+                print("Part B not configured yet. Message stored in Supabase.")
 
     except json.JSONDecodeError as error:
         print("\nMALFORMED JSON MESSAGE")
