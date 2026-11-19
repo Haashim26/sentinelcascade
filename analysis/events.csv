@@ -1,0 +1,104 @@
+id,ts,zone,engine,from_stage,to_stage,reason,scenario,label,scenario_start_ts
+1,1760000000,zone2,staged,0,2,3 sensor types elevated together,genuine_event,genuine_event,1760000000
+2,1760000000,zone2,baseline,0,3,any sensor elevated,genuine_event,genuine_event,1760000000
+3,1760000010,zone2,staged,2,3,sustained and 3 sensor types elevated,genuine_event,genuine_event,1760000000
+4,1760000039,zone2,baseline,3,0,nothing elevated,genuine_event,genuine_event,1760000000
+5,1760000048,zone2,staged,3,2,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760000000
+6,1760000063,zone2,staged,2,1,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760000000
+7,1760000078,zone2,staged,1,0,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760000000
+8,1760001000,zone3,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760001000
+9,1760001000,zone3,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760001000
+10,1760001007,zone3,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760001000
+11,1760001018,zone3,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760001000
+12,1760002000,zone4,staged,0,1,"one sensor type elevated, not sustained",silent_failure,genuine_event,1760002000
+13,1760002000,zone4,baseline,0,3,any sensor elevated,silent_failure,genuine_event,1760002000
+14,1760002010,zone4,staged,1,2,one sensor type sustained 10 s,silent_failure,genuine_event,1760002000
+15,1760002103,zone4,staged,2,3,sustained and 2 sensor types elevated (incl. silence),silent_failure,genuine_event,1760002000
+16,1760006000,zone2,staged,0,2,2 sensor types elevated together,genuine_event,genuine_event,1760006000
+17,1760006000,zone2,baseline,0,3,any sensor elevated,genuine_event,genuine_event,1760006000
+18,1760006010,zone2,staged,2,3,sustained and 2 sensor types elevated,genuine_event,genuine_event,1760006000
+19,1760006040,zone2,baseline,3,0,nothing elevated,genuine_event,genuine_event,1760006000
+20,1760006050,zone2,staged,3,2,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760006000
+21,1760006065,zone2,staged,2,1,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760006000
+22,1760006080,zone2,staged,1,0,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760006000
+23,1760008000,zone4,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760008000
+24,1760008000,zone4,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760008000
+25,1760008009,zone4,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760008000
+26,1760008019,zone4,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760008000
+27,1760011000,zone4,staged,0,1,"one sensor type elevated, not sustained",silent_failure,genuine_event,1760011000
+28,1760011000,zone4,baseline,0,3,any sensor elevated,silent_failure,genuine_event,1760011000
+29,1760011010,zone4,staged,1,2,one sensor type sustained 10 s,silent_failure,genuine_event,1760011000
+30,1760011102,zone4,staged,2,3,sustained and 2 sensor types elevated (incl. silence),silent_failure,genuine_event,1760011000
+31,1760012000,zone2,staged,0,1,"one sensor type elevated, not sustained",silent_failure,genuine_event,1760012000
+32,1760012000,zone2,baseline,0,3,any sensor elevated,silent_failure,genuine_event,1760012000
+33,1760012010,zone2,staged,1,2,one sensor type sustained 10 s,silent_failure,genuine_event,1760012000
+34,1760012107,zone2,staged,2,3,sustained and 2 sensor types elevated (incl. silence),silent_failure,genuine_event,1760012000
+35,1760014000,zone4,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760014000
+36,1760014000,zone4,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760014000
+37,1760014007,zone4,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760014000
+38,1760014017,zone4,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760014000
+39,1760016000,zone3,staged,0,1,"one sensor type elevated, not sustained",silent_failure,genuine_event,1760016000
+40,1760016000,zone3,baseline,0,3,any sensor elevated,silent_failure,genuine_event,1760016000
+41,1760016010,zone3,staged,1,2,one sensor type sustained 10 s,silent_failure,genuine_event,1760016000
+42,1760016102,zone3,staged,2,3,sustained and 2 sensor types elevated (incl. silence),silent_failure,genuine_event,1760016000
+43,1760019000,zone3,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760019000
+44,1760019000,zone3,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760019000
+45,1760019007,zone3,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760019000
+46,1760019018,zone3,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760019000
+47,1760021000,zone2,staged,0,1,"one sensor type elevated, not sustained",silent_failure,genuine_event,1760021000
+48,1760021000,zone2,baseline,0,3,any sensor elevated,silent_failure,genuine_event,1760021000
+49,1760021010,zone2,staged,1,2,one sensor type sustained 10 s,silent_failure,genuine_event,1760021000
+50,1760021108,zone2,staged,2,3,sustained and 2 sensor types elevated (incl. silence),silent_failure,genuine_event,1760021000
+51,1760023000,zone4,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760023000
+52,1760023000,zone4,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760023000
+53,1760023004,zone4,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760023000
+54,1760023017,zone4,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760023000
+55,1760025000,zone3,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760025000
+56,1760025000,zone3,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760025000
+57,1760025005,zone3,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760025000
+58,1760025018,zone3,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760025000
+59,1760026000,zone4,staged,0,2,2 sensor types elevated together,genuine_event,genuine_event,1760026000
+60,1760026000,zone4,baseline,0,3,any sensor elevated,genuine_event,genuine_event,1760026000
+61,1760026010,zone4,staged,2,3,sustained and 2 sensor types elevated,genuine_event,genuine_event,1760026000
+62,1760026045,zone4,baseline,3,0,nothing elevated,genuine_event,genuine_event,1760026000
+63,1760026054,zone4,staged,3,2,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760026000
+64,1760026069,zone4,staged,2,1,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760026000
+65,1760026084,zone4,staged,1,0,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760026000
+66,1760027000,zone2,staged,0,1,"one sensor type elevated, not sustained",silent_failure,genuine_event,1760027000
+67,1760027000,zone2,baseline,0,3,any sensor elevated,silent_failure,genuine_event,1760027000
+68,1760027010,zone2,staged,1,2,one sensor type sustained 10 s,silent_failure,genuine_event,1760027000
+69,1760027108,zone2,staged,2,3,sustained and 2 sensor types elevated (incl. silence),silent_failure,genuine_event,1760027000
+70,1760028000,zone3,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760028000
+71,1760028000,zone3,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760028000
+72,1760028009,zone3,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760028000
+73,1760028019,zone3,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760028000
+74,1760030000,zone2,staged,0,2,3 sensor types elevated together,genuine_event,genuine_event,1760030000
+75,1760030000,zone2,baseline,0,3,any sensor elevated,genuine_event,genuine_event,1760030000
+76,1760030010,zone2,staged,2,3,sustained and 3 sensor types elevated,genuine_event,genuine_event,1760030000
+77,1760030033,zone2,baseline,3,0,nothing elevated,genuine_event,genuine_event,1760030000
+78,1760030045,zone2,staged,3,2,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760030000
+79,1760030060,zone2,staged,2,1,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760030000
+80,1760030075,zone2,staged,1,0,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760030000
+81,1760031000,zone3,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760031000
+82,1760031000,zone3,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760031000
+83,1760031007,zone3,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760031000
+84,1760031017,zone3,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760031000
+85,1760033000,zone2,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760033000
+86,1760033000,zone2,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760033000
+87,1760033006,zone2,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760033000
+88,1760033018,zone2,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760033000
+89,1760034000,zone3,staged,0,2,3 sensor types elevated together,genuine_event,genuine_event,1760034000
+90,1760034000,zone3,baseline,0,3,any sensor elevated,genuine_event,genuine_event,1760034000
+91,1760034010,zone3,staged,2,3,sustained and 3 sensor types elevated,genuine_event,genuine_event,1760034000
+92,1760034036,zone3,baseline,3,0,nothing elevated,genuine_event,genuine_event,1760034000
+93,1760034049,zone3,staged,3,2,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760034000
+94,1760034064,zone3,staged,2,1,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760034000
+95,1760034079,zone3,staged,1,0,decay: nothing elevated for 15 s,genuine_event,genuine_event,1760034000
+96,1760038000,zone4,staged,0,1,"one sensor type elevated, not sustained",false_alarm,false_alarm,1760038000
+97,1760038000,zone4,baseline,0,3,any sensor elevated,false_alarm,false_alarm,1760038000
+98,1760038006,zone4,baseline,3,0,nothing elevated,false_alarm,false_alarm,1760038000
+99,1760038018,zone4,staged,1,0,decay: nothing elevated for 15 s,false_alarm,false_alarm,1760038000
+100,1760039000,zone2,staged,0,1,"one sensor type elevated, not sustained",silent_failure,genuine_event,1760039000
+101,1760039000,zone2,baseline,0,3,any sensor elevated,silent_failure,genuine_event,1760039000
+102,1760039010,zone2,staged,1,2,one sensor type sustained 10 s,silent_failure,genuine_event,1760039000
+103,1760039109,zone2,staged,2,3,sustained and 2 sensor types elevated (incl. silence),silent_failure,genuine_event,1760039000
