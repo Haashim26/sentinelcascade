@@ -77,7 +77,7 @@ def process_message(raw_payload):
             print("Could not store message in Supabase.")
 
         # Forward only valid messages successfully stored
-        if valid and saved:
+        if valid:
             if ENGINE_URL:
                 forward_message(payload)
             else:
